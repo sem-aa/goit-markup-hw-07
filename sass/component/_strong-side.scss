@@ -1,0 +1,29 @@
+.strong-side {
+  display: flex;
+  .background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon:not(:last-child) {
+    margin-right: 30px;
+  }
+  .title {
+    color: $title-text-color;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+  .text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
+.icon .background {
+  background-color: $secondary-background;
+  height: 120px;
+  border-radius: 4px;
+}

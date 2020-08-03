@@ -1,0 +1,104 @@
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 72px;
+  padding-bottom: 100px;
+}
+
+.footer {
+  background-color: $footer-color;
+}
+
+.adres {
+  font-style: normal;
+  .logo {
+    margin-top: 20px;
+  }
+  .text {
+    color: $primary-white-color;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  .link {
+    color: $secondary-link;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+}
+
+.contact {
+  color: $primary-white-color;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+
+  text-transform: uppercase;
+}
+
+.contact-lebel {
+  display: flex;
+  align-items: center;
+}
+
+.lebel-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.form-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fly {
+  margin-left: 10px;
+}
+.input-footer {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  text-indent: 16px;
+  color: $primary-text-color;
+
+  background-color: $footer-color;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+/* cоц сети */
+.footer-icon {
+  display: flex;
+  .svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 44px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: $primary-white-color;
+
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 20px;
+    &:hover {
+      background-color: $accent-color;
+    }
+  }
+}
