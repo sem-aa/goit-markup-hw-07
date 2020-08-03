@@ -749,14 +749,13 @@ h6 {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
-  opacity: 0;
-  pointer-events: none;
+  opacity: 1;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-background .is-hidden {
-  opacity: 1;
+.modal-background.is-hidden {
+  opacity: 0;
   pointer-events: none;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -789,15 +788,6 @@ h6 {
 }
 
 .button-close {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   outline: none;
   position: absolute;
   top: 8px;
@@ -807,7 +797,6 @@ h6 {
   background-image: url(../image/close.svg);
   background-color: #ffffff;
   background-size: contain;
-  background-repeat: repeat;
   width: 30px;
   height: 30px;
   position: absolute;
@@ -861,7 +850,7 @@ h6 {
   line-height: 1.14px;
   letter-spacing: 0.01em;
   text-indent: 35px;
-  color: var(--primary-text-color);
+  color: #757575;
 }
 
 .input:focus {
@@ -885,7 +874,7 @@ h6 {
 }
 
 .input:focus ~ .icon-form {
-  fill: var(--accent-color);
+  fill: #2196f3;
 }
 
 .comment {

@@ -6,12 +6,11 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
 
-  opacity: 0;
-  pointer-events: none;
+  opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-background .is-hidden {
-  opacity: 1;
+.modal-background.is-hidden {
+  opacity: 0;
 
   pointer-events: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -42,9 +41,6 @@
 }
 
 .button-close {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   outline: none;
 
   position: absolute;
@@ -55,7 +51,7 @@
   background-image: url(../image/close.svg);
   background-color: $primary-white-color;
   background-size: contain;
-  background-repeat: repeat;
+
   width: 30px;
   height: 30px;
   position: absolute;
@@ -105,7 +101,7 @@
 
   text-indent: 35px;
 
-  color: var(--primary-text-color);
+  color: $primary-text-color;
   &:focus {
     border-color: $accent-color;
     outline: none;
@@ -126,7 +122,7 @@
   transform: translateY(-170%);
 }
 .input:focus ~ .icon-form {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }
 
 .comment {
